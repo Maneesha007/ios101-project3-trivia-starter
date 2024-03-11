@@ -3,7 +3,7 @@
 
 Submitted by: **Maneesha**
 
-**Trivia** is an app that 
+**Trivia** is an app that app that displays a question and 4 choices.A user can view the current question and 4 different answers where they can navigate to  the next question after tapping on an any option. User can track which question they're currently and how many questions they got correct after they've answered all the questions. User can restart the game after they've finished answering all questions.
 
 Time spent: **8** hours spent in total
 
@@ -29,7 +29,11 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-
+<div>
+    <a href="https://www.loom.com/share/368010757a8f40ab8dd6ce0a36b8fa37">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/368010757a8f40ab8dd6ce0a36b8fa37-with-play.gif">
+    </a>
+  </div>
 
 ## Notes
 
