@@ -26,6 +26,8 @@ class TriviaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         displayCurrentQuestion()
+        questionAskedLabel.numberOfLines = 0
+        questionAskedLabel.lineBreakMode = .byWordWrapping
     }
     
     func displayCurrentQuestion() {
