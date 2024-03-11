@@ -1,4 +1,4 @@
-# ios101-project3-trivia-starter
+
 # Project 3 - *Trivia*
 
 Submitted by: **Maneesha**
@@ -35,7 +35,9 @@ The following **additional** features are implemented:
 
 challenges encountered while building the app.
 
-- [ ] User can use the vertical orientation of the app on any device
+- Adjusting constraints and ensuring proper alignment took some trial and error.
+- had confusion how to structure data model and use it effectively in the view controller.
+- Managing the logic for handling the end of questions, displaying the game over message as soon as button for answer of third question is tapped.
 
 ## License
 
