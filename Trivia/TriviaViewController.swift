@@ -22,6 +22,11 @@ class TriviaViewController: UIViewController {
             questionAskedLabel.clipsToBounds = true
         }
     }
+
+    @IBOutlet weak var Option1Button: UIButton!
+    @IBOutlet weak var Option2Button: UIButton!
+    @IBOutlet weak var Option3Button: UIButton!
+    @IBOutlet weak var Option4Button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +45,19 @@ class TriviaViewController: UIViewController {
         questionLabel.text = "Question: \(currentQuestionIndex + 1)/\(triviaQuestions.count)"
         categoryLabel.text = currentQuestion.genre.rawValue
         questionAskedLabel.text = currentQuestion.questionText
+
+        // Set the options for the current question
+        for (index, option) in currentQuestion.options.enumerated() {
+            let optionButton = view.viewWithTag(index + 1) as? UIButton
+            optionButton?.setTitle(option.text, for: .normal)
+            print("Setting option \(index + 1) title to \(option.text)")
+        }
+        
+        // Set the options for the current question
+            Option1Button.setTitle(currentQuestion.options[0].text, for: .normal)
+            Option2Button.setTitle(currentQuestion.options[1].text, for: .normal)
+            Option3Button.setTitle(currentQuestion.options[2].text, for: .normal)
+            Option4Button.setTitle(currentQuestion.options[3].text, for: .normal)
     }
     
     func checkAnswer(optionIndex: Int) {
@@ -55,7 +73,7 @@ class TriviaViewController: UIViewController {
         
         // Move to the next question
         currentQuestionIndex += 1
-        displayCurrentQuestion()
+        
         
         if currentQuestionIndex == triviaQuestions.count {
                 displayGameOver() // Call displayGameOver if it's the last question
